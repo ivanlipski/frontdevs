@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <base href="./">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <a href="#" class="logo-google"></a>
+        </div>
+    </header>
+    <div class="navbar-background">
+        <div class="container clearfix">
+            <form class="filter">
+                <input id="filter-checkbox-1" type="checkbox" class="filter-checkbox" name="men" checked>
+                <label for="filter-checkbox-1" class="filter-label">MEN</label>
+                <input id="filter-checkbox-2" type="checkbox" class="filter-checkbox" checked>
+                <label for="filter-checkbox-2" class="filter-label" name="women">WOMEN</label>
+                <input id="filter-checkbox-3" type="checkbox" class="filter-checkbox" checked>
+                <label for="filter-checkbox-3" class="filter-label" name="children">CHILDREN</label>
+            </form>
+            <button class="btn right">SEE ALL PRODUCTS</button>
+        </div>
+    </div>
+    <div class="content container">
+        <div class="sort">
+            SORT BY
+            <select class="sort-list">
+                <option value="PRICE">PRICE</option>
+                <option value="NAME">NAME</option>
+            </select>
+        </div>
+        <div class="catalog-list">
+            <div class="catalog" id="men">
+                <div class="catalog-title">MEN</div>
+                <div class="catalog-pagination">
+                    <span class="current-slide"></span><span class="catalog-pagination-breaker">/</span><span class="number-slides"></span>
+                </div>
+                <div class="catalog-nav">
+                    <button class="catalog-arrow catalog-arrow__prev"></button>
+                    <button class="catalog-arrow catalog-arrow__next"></button>
+                </div>
+                <div class="catalog-slider">
+                    <div class="catalog-item">
+                        <a href="#" class="catalog-item-link">
+                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        </a>
+                        <div class="catalog-item-size">
+                            <a href="google.ru">123</a>
+                        </div>
+                        <div class="catalog-item-colors">
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
+                        </div>
+                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
+                        <span class="catalog-item-price">5,00&#8364;</span>
+
+                    </div>
+                    <div class="catalog-item">2</div>
+                    <div class="catalog-item">3</div>
+                    <div class="catalog-item">4</div>
+                    <div class="catalog-item">5</div>
+                    <div class="catalog-item">6</div>
+                    <div class="catalog-item">7</div>
+                    <div class="catalog-item">8</div>
+                    <div class="catalog-item">9</div>
+                    <div class="catalog-item">10</div>
+                    <div class="catalog-item">11</div>
+                    <div class="catalog-item">12</div>
+                    <div class="catalog-item">13</div>
+                    <div class="catalog-item">14</div>
+                    <div class="catalog-item">15</div>
+                </div>
+            </div>
+            <div class="catalog" id="women">
+                <div class="catalog-title">WOMEN</div>
+                <div class="catalog-pagination">
+                    <span class="current-slide"></span><span class="catalog-pagination-breaker">/</span><span class="number-slides"></span>
+                </div>
+                <div class="catalog-nav">
+                    <button class="catalog-arrow catalog-arrow__prev"></button>
+                    <button class="catalog-arrow catalog-arrow__next"></button>
+                </div>
+                <div class="catalog-slider">
+                    <div class="catalog-item">
+                        <a href="#" class="catalog-item-link">
+                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        </a>
+                        <div class="catalog-item-size">
+                            <a href="google.ru">123</a>
+                        </div>
+                        <div class="catalog-item-colors">
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
+                        </div>
+                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
+                        <span class="catalog-item-price">5,00&#8364;</span>
+
+                    </div>
+                    <div class="catalog-item">2</div>
+                    <div class="catalog-item">3</div>
+                    <div class="catalog-item">4</div>
+                    <div class="catalog-item">5</div>
+                    <div class="catalog-item">6</div>
+                    <div class="catalog-item">7</div>
+                    <div class="catalog-item">8</div>
+                    <div class="catalog-item">9</div>
+                    <div class="catalog-item">10</div>
+                    <div class="catalog-item">11</div>
+                    <div class="catalog-item">12</div>
+                    <div class="catalog-item">13</div>
+                    <div class="catalog-item">14</div>
+                    <div class="catalog-item">15</div>
+                </div>
+            </div>
+            <div class="catalog" id="children">
+                <div class="catalog-title">CHILDREN</div>
+                <div class="catalog-pagination">
+                    <span class="current-slide"></span><span class="catalog-pagination-breaker">/</span><span class="number-slides"></span>
+                </div>
+                <div class="catalog-nav">
+                    <button class="catalog-arrow catalog-arrow__prev"></button>
+                    <button class="catalog-arrow catalog-arrow__next"></button>
+                </div>
+                <div class="catalog-slider">
+                    <div class="catalog-item">
+                        <a href="#" class="catalog-item-link">
+                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        </a>
+                        <div class="catalog-item-size">
+                            <a href="google.ru">123</a>
+                        </div>
+                        <div class="catalog-item-colors">
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
+                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
+                        </div>
+                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
+                        <span class="catalog-item-price">5,00&#8364;</span>
+
+                    </div>
+                    <div class="catalog-item">2</div>
+                    <div class="catalog-item">3</div>
+                    <div class="catalog-item">4</div>
+                    <div class="catalog-item">5</div>
+                    <div class="catalog-item">6</div>
+                    <div class="catalog-item">7</div>
+                    <div class="catalog-item">8</div>
+                    <div class="catalog-item">9</div>
+                    <div class="catalog-item">10</div>
+                    <div class="catalog-item">11</div>
+                    <div class="catalog-item">12</div>
+                    <div class="catalog-item">13</div>
+                    <div class="catalog-item">14</div>
+                    <div class="catalog-item">15</div>
+                </div>
+            </div>
+        </div>
+        <div class="123"></div>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
