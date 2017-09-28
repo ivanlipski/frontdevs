@@ -1,6 +1,10 @@
 $main-color: #AA9B77;
 $text-color: #424242;
 
+@mixin transition($type) {
+  transition: $type .3s linear;
+}
+
 body {
   font-family: Quicksand-Bold;
   color: #333333;
@@ -19,8 +23,15 @@ button,a {
 .link {
   color: $main-color;
   text-decoration: none;
+  @include transition(opacity);
   &:hover {
     opacity: 0.8;
+  }
+  &-back {
+    background: url("../images/fa-chevron-left.png") 0 50% no-repeat;
+    color: #333333;
+    font-size: 18px;
+    padding-left: 41px;
   }
 }
 
@@ -51,8 +62,25 @@ button,a {
   font: 14px 'Quicksand-Bold';
   line-height: 52px;
   padding: 0 40px 0 33px;
+  @include transition(opacity);
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.colors {
+  &-btn {
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 22px;
+    height: 21px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    @include transition(border);
+    &:hover {
+      border: 2px solid $main-color;
+    }
   }
 }
 
@@ -73,6 +101,11 @@ button,a {
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 53px;
   &-background {
     background: #f5f6f7;
     padding: 45px 0;
@@ -114,20 +147,75 @@ button,a {
   }
 }
 
+
+
 .content {
   padding-top: 14px;
+  padding-bottom: 80px;
 }
 
 .sort {
+  display: inline-block;
   color: $text-color;
-  font-size: 20px;
+  position: relative;
+  &-title {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  &.active {
+    & .sort-parameter-selected {
+      background-color: #f5f6f7;
+      border-radius: 3px 3px 0 0;
+      &:after {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+  }
   &-list {
-    font-size: 16px;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    z-index: 1;
+    &-item {
+      background-color: #f5f6f7;
+      cursor: pointer;
+      padding: 15px 40px 15px 20px;
+      &:hover {
+        background-color: #ebebeb;
+      }
+    }
+  }
+  &-parameter {
+    &-selected {
+      cursor: pointer;
+      padding: 15px 25px 15px 20px;
+      border-radius: 3px;
+      &:hover {
+        background: #f5f6f7;
+      }
+      &:after {
+        content: '';
+        display: block;
+        background: url("../images/fa-angle-down.png") no-repeat;
+        float: right;
+        width: 12px;
+        height: 8px;
+        margin: 6px 0 0 7px;
+        transition: transform 0.3s linear;
+      }
+    }
   }
 }
 
 .catalog {
-  &:nth-child(2n+1) {
+  &:nth-of-type(2n+1) {
     text-align: right;
     & .catalog-title {
       text-align: left;
@@ -148,7 +236,7 @@ button,a {
       }
     }
   }
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     text-align: left;
     & .catalog-title {
       text-align: right;
@@ -183,54 +271,80 @@ button,a {
   }
   &-item {
     margin-left: 64px;
-    background: #f5f6f7;
-    border: 6px solid #f5f6f7;
-    position: relative;
-    &:hover {
-      border: 6px solid $main-color;
-      border-radius: 3px;
-    }
+    outline: none;
     &-link {
-      display: block;
-      position: relative;
-      line-height: 366px;
-      text-align: center;
+      color: $text-color;
+      display: flex;
+      align-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #f5f6f7;
+      border: 6px solid transparent;
+      min-height: 360px;
+      text-align: left;
+      text-decoration: none;
+      padding: 19px;
+      @include transition(border);
+
+      &:hover {
+        border: 6px solid $main-color;
+        border-radius: 3px;
+      }
+    }
+    &-img {
+      width: 100%;
       img {
-        display: inline-block;
-        vertical-align: middle;
+        max-width: 100%;
+        margin: auto;
       }
-      &-section {
-        position: absolute;
-        left: 19px;
-        bottom: 20px;
-      }
+    }
+    &-title {
+      width: 70%;
+      color: $main-color;
+      font-size: 18px;
+      align-self: center;
     }
     &-price {
-      position: absolute;
-      right: 19px;
-      bottom: 20px;
+      text-align: right;
+      width: 30%;
+      font-size: 22px;
+      letter-spacing: -2px;
     }
     &-size {
-      position: absolute;
-      left: 19px;
-      top: 20px;
-    }
-    &-colors {
-      position: absolute;
-      right: 19px;
-      top: 20px;
-      &-btn {
-        border: 2px solid transparent;
-        cursor: pointer;
-        width: 22px;
-        height: 21px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        &:hover {
-          border: 2px solid $main-color;
+      width: 50%;
+      position: relative;
+      margin-right: auto;
+      &.active {
+        & .catalog-item-size-title:after {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
         }
       }
+      &-title {
+        display: inline-block;
+        &:after {
+          content: '';
+          display: block;
+          background: url("../images/fa-angle-down.png") no-repeat;
+          float: right;
+          width: 12px;
+          height: 8px;
+          margin: 6px 0 0 7px;
+          transition: transform 0.3s linear;
+        }
+      }
+      &-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+      }
+    }
+    &-colors {
+      width: 50%;
+      text-align: right;
     }
   }
   &-pagination {
@@ -252,9 +366,82 @@ button,a {
     &:hover {
       opacity: 0.8;
     }
+    &.slick-disabled {
+      opacity: 0.1;
+    }
     &__next {
-      background: url("../images/arrow-next.png") no-repeat;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
       margin-left: 8px;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 6px solid $main-color;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #f5f6f7;
+  padding: 100px 30px;
+  &-title {
+    overflow: hidden;
+    color: $text-color;
+    font-size: 18px;
+    &:after {
+      background: #cccccc;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: solid #FFF;
+      border-width: 0 10px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 2px;
+      width: 100%;
+      margin-right: -100%;
+      margin-top: -1px;
+    }
+  }
+  &-img {
+    text-align: center;
+    width: 70%;
+    @media (max-width: 780px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &-description {
+    width: 30%;
+    @media (max-width: 780px) {
+      width: 100%;
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+      div {
+        width: 50%;
+        &:first-child {
+          text-align: right;
+          margin-right: 40px;
+
+        }
+      }
     }
   }
 }

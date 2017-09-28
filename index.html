@@ -19,25 +19,25 @@
         </div>
     </header>
     <div class="navbar-background">
-        <div class="container clearfix">
+        <div class="container navbar">
             <form class="filter">
-                <input id="filter-checkbox-1" type="checkbox" class="filter-checkbox" name="men" checked>
+                <input id="filter-checkbox-1" type="checkbox" class="filter-checkbox" data-checkbox-name="men" checked>
                 <label for="filter-checkbox-1" class="filter-label">MEN</label>
-                <input id="filter-checkbox-2" type="checkbox" class="filter-checkbox" checked>
-                <label for="filter-checkbox-2" class="filter-label" name="women">WOMEN</label>
-                <input id="filter-checkbox-3" type="checkbox" class="filter-checkbox" checked>
-                <label for="filter-checkbox-3" class="filter-label" name="children">CHILDREN</label>
+                <input id="filter-checkbox-2" type="checkbox" class="filter-checkbox" data-checkbox-name="women" checked>
+                <label for="filter-checkbox-2" class="filter-label">WOMEN</label>
+                <input id="filter-checkbox-3" type="checkbox" class="filter-checkbox" data-checkbox-name="children" checked>
+                <label for="filter-checkbox-3" class="filter-label">CHILDREN</label>
             </form>
-            <button class="btn right">SEE ALL PRODUCTS</button>
+            <button class="btn">SEE ALL PRODUCTS</button>
         </div>
     </div>
     <div class="content container">
+        <div class="sort-title">SORT BY</div>
         <div class="sort">
-            SORT BY
-            <select class="sort-list">
-                <option value="PRICE">PRICE</option>
-                <option value="NAME">NAME</option>
-            </select>
+            <div class="sort-parameter-selected">PRICE</div>
+            <div class="sort-list">
+                <div class="sort-list-item">NAME</div>
+            </div>
         </div>
 
         <div class="catalog-list">
@@ -52,35 +52,210 @@
                 </div>
                 <div class="catalog-slider">
                     <div class="catalog-item">
-                        <a href="#" class="catalog-item-link">
-                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
                         </a>
-                        <div class="catalog-item-size">
-                            <a href="google.ru">123</a>
-                        </div>
-                        <div class="catalog-item-colors">
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
-                        </div>
-                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
-                        <span class="catalog-item-price">5,00&#8364;</span>
-
                     </div>
-                    <div class="catalog-item">2</div>
-                    <div class="catalog-item">3</div>
-                    <div class="catalog-item">4</div>
-                    <div class="catalog-item">5</div>
-                    <div class="catalog-item">6</div>
-                    <div class="catalog-item">7</div>
-                    <div class="catalog-item">8</div>
-                    <div class="catalog-item">9</div>
-                    <div class="catalog-item">10</div>
-                    <div class="catalog-item">11</div>
-                    <div class="catalog-item">12</div>
-                    <div class="catalog-item">13</div>
-                    <div class="catalog-item">14</div>
-                    <div class="catalog-item">15</div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                    <a href="inner.html" class="catalog-item-link">
+                        <div class="catalog-item-size">10LITRI</div>
+                        <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                        <span class="catalog-item-title">BACKPACK</span>
+                        <span class="catalog-item-price">60,00&#8364;</span>
+                    </a>
+                </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="catalog" id="women">
@@ -94,39 +269,148 @@
                 </div>
                 <div class="catalog-slider">
                     <div class="catalog-item">
-                        <a href="#" class="catalog-item-link">
-                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello5.png" alt=""></div>
+                            <span class="catalog-item-title">GIACKET</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
                         </a>
-                        <div class="catalog-item-size">
-                            <a href="google.ru">123</a>
-                        </div>
-                        <div class="catalog-item-colors">
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
-                        </div>
-                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
-                        <span class="catalog-item-price">5,00&#8364;</span>
-
                     </div>
-                    <div class="catalog-item">2</div>
-                    <div class="catalog-item">3</div>
-                    <div class="catalog-item">4</div>
-                    <div class="catalog-item">5</div>
-                    <div class="catalog-item">6</div>
-                    <div class="catalog-item">7</div>
-                    <div class="catalog-item">8</div>
-                    <div class="catalog-item">9</div>
-                    <div class="catalog-item">10</div>
-                    <div class="catalog-item">11</div>
-                    <div class="catalog-item">12</div>
-                    <div class="catalog-item">13</div>
-                    <div class="catalog-item">14</div>
-                    <div class="catalog-item">15</div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello6.png" alt=""></div>
+                            <span class="catalog-item-title">TREKKING SHOES</span>
+                            <span class="catalog-item-price">80,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/livello7.png" style="background-color: #d3a7ac;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffffff;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello7.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">20,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello5.png" alt=""></div>
+                            <span class="catalog-item-title">GIACKET</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello6.png" alt=""></div>
+                            <span class="catalog-item-title">TREKKING SHOES</span>
+                            <span class="catalog-item-price">80,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/livello7.png" style="background-color: #d3a7ac;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffffff;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello7.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">20,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                    <a href="inner.html" class="catalog-item-link">
+                        <div class="catalog-item-size">
+                            <div class="catalog-item-size-title">SIZE</div>
+                            <div class="catalog-item-size-list">
+                                <div class="catalog-item-size-item">XL</div>
+                                <div class="catalog-item-size-item">L</div>
+                            </div>
+                        </div>
+                        <div class="catalog-item-img"><img src="images/livello5.png" alt=""></div>
+                        <span class="catalog-item-title">GIACKET</span>
+                        <span class="catalog-item-price">60,00&#8364;</span>
+                    </a>
+                </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello6.png" alt=""></div>
+                            <span class="catalog-item-title">TREKKING SHOES</span>
+                            <span class="catalog-item-price">80,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/livello7.png" style="background-color: #d3a7ac;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffffff;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello7.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">20,00&#8364;</span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <div class="catalog" id="children">
-                <div class="catalog-title">CHILDREN</div>
+                <div class="catalog-title">MEN</div>
                 <div class="catalog-pagination">
                     <span class="current-slide"></span><span class="catalog-pagination-breaker">/</span><span class="number-slides"></span>
                 </div>
@@ -136,35 +420,210 @@
                 </div>
                 <div class="catalog-slider">
                     <div class="catalog-item">
-                        <a href="#" class="catalog-item-link">
-                            <img src="images/t-shirt.png" alt="t-shirt" class="catalog-item-img">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
                         </a>
-                        <div class="catalog-item-size">
-                            <a href="google.ru">123</a>
-                        </div>
-                        <div class="catalog-item-colors">
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/fa-check.png" style="background-color: #ffe637;"></button>
-                            <button class="catalog-item-colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #535253;"></button>
-                        </div>
-                        <a href="#" class="catalog-item-link-section link">T-SHIRT</a>
-                        <span class="catalog-item-price">5,00&#8364;</span>
-
                     </div>
-                    <div class="catalog-item">2</div>
-                    <div class="catalog-item">3</div>
-                    <div class="catalog-item">4</div>
-                    <div class="catalog-item">5</div>
-                    <div class="catalog-item">6</div>
-                    <div class="catalog-item">7</div>
-                    <div class="catalog-item">8</div>
-                    <div class="catalog-item">9</div>
-                    <div class="catalog-item">10</div>
-                    <div class="catalog-item">11</div>
-                    <div class="catalog-item">12</div>
-                    <div class="catalog-item">13</div>
-                    <div class="catalog-item">14</div>
-                    <div class="catalog-item">15</div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-colors">
+                                <button class="colors-btn" data-image-color-url="images/t-shirt.png" style="background-color: #165eb9;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-2.png" style="background-color: #ffe637;"></button>
+                                <button class="colors-btn" data-image-color-url="images/t-shirt-3.png" style="background-color: #535253;"></button>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/t-shirt.png" alt="t-shirt"></div>
+                            <span class="catalog-item-title">T-SHIRT</span>
+                            <span class="catalog-item-price">5,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">
+                                <div class="catalog-item-size-title">SIZE</div>
+                                <div class="catalog-item-size-list">
+                                    <div class="catalog-item-size-item">XL</div>
+                                    <div class="catalog-item-size-item">L</div>
+                                </div>
+                            </div>
+                            <div class="catalog-item-img"><img src="images/livello3.png" alt=""></div>
+                            <span class="catalog-item-title">PANTS FORCLAZ</span>
+                            <span class="catalog-item-price">30,00&#8364;</span>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="inner.html" class="catalog-item-link">
+                            <div class="catalog-item-size">10LITRI</div>
+                            <div class="catalog-item-img"><img src="images/livello4.png" alt=""></div>
+                            <span class="catalog-item-title">BACKPACK</span>
+                            <span class="catalog-item-price">60,00&#8364;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
