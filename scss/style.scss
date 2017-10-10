@@ -117,12 +117,6 @@ button,a {
   margin-bottom: 10px;
   &-checkbox {
     display: none;
-    &:checked .filter-label {
-      &:before {
-        border-color: $main-color;
-        background: url("../images/fa-check.png") 50% no-repeat, #fff;
-      }
-    }
   }
   &-label {
     display: inline-block;
@@ -152,8 +146,6 @@ button,a {
     }
   }
 }
-
-
 
 .content {
   padding-top: 14px;
