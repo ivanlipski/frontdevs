@@ -9,7 +9,8 @@ $(document).ready(function() {
         setSlider($(element).attr('id'));
     })
     function setSlider(id) {
-        $('#'+id+' .catalog-slider').slick({
+        let catalogSlider = $('#'+id+' .catalog-slider');
+        catalogSlider.slick({
             infinite: false,
             speed: 600,
             cssEase:'linear',
@@ -34,7 +35,7 @@ $(document).ready(function() {
                 },
             ]
         });
-        let catalogSlider = $('#'+id+' .catalog-slider');
+
         function setCurrentSlide() {
             $('#'+id+' .current-slide').text(catalogSlider.slick('slickCurrentSlide')/$('#'+id+' .slick-active').length+1);
         }
@@ -55,27 +56,29 @@ $(document).ready(function() {
         $(this).closest('.catalog-item').find('.catalog-item-img img').animate({opacity: 0},500, function () {
             $(this).attr('src', thisUrl).animate({opacity: 1}, 500);
         });
-    })
+    });
 
     $('.filter input').change( function () {
         if ($(this).prop('checked') == true ) {
             $('#'+$(this).data('checkbox-name')).slideDown("slow");
+            $(this).closest('.filter-label').addClass('checked');
         }
         else {
             $('#'+$(this).data('checkbox-name')).slideUp("slow");
+            $(this).closest('.filter-label').removeClass('checked');
         }
-    })
+    });
 
     $('.product-description-colors .colors-btn').bind('click', function () {
         let thisUrl = $(this).data('image-color-url');
         $(this).closest('.product').find('.product-img img').animate({opacity: 0},500, function () {
             $(this).attr('src', thisUrl).animate({opacity: 1}, 500);
         });
-    })
+    });
 
     $('.sort').bind('click', function () {
         $(this).toggleClass('active').find('.sort-list').slideToggle('slow');
-    })
+    });
 
     function sortSelect() {
         $('.sort-list-item').bind('click', function () {
@@ -91,12 +94,12 @@ $(document).ready(function() {
     $('.catalog-item-size-title').bind('click', function (e) {
         e.preventDefault();
         $(this).closest('.catalog-item-size').toggleClass('active').find('.catalog-item-size-list').slideToggle('slow');
-    })
+    });
 
     $('.catalog-item-size-list').bind('click', function (e) {
         e.preventDefault();
         $(this).closest('.catalog-item-size').removeClass('active').find('.catalog-item-size-list').slideToggle('slow');
-    })
+    });
 
 
 });

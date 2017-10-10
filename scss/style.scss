@@ -117,7 +117,7 @@ button,a {
   margin-bottom: 10px;
   &-checkbox {
     display: none;
-    &:checked+.filter-label {
+    &:checked .filter-label {
       &:before {
         border-color: $main-color;
         background: url("../images/fa-check.png") 50% no-repeat, #fff;
@@ -143,6 +143,12 @@ button,a {
       height: 24px;
       position: absolute;
       left: 0;
+    }
+    &.checked {
+      &:before {
+        border-color: $main-color;
+        background: url("../images/fa-check.png") 50% no-repeat, #fff;
+      }
     }
   }
 }
@@ -367,6 +373,7 @@ button,a {
       opacity: 0.8;
     }
     &.slick-disabled {
+      cursor: default;
       opacity: 0.1;
     }
     &__next {
